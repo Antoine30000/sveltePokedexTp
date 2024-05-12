@@ -6,7 +6,7 @@ interface PokemonMetadata {
 }
 
 export const load: PageLoad = async ({ fetch }) => {
-	const pokemonsListReq = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+	const pokemonsListReq = await fetch('https://pokeapi.co/api/v2/pokemon?limit=18');
 	const pokemonsList = await pokemonsListReq.json();
 
 	let pokemons: PokemonMetadata[] = [];
