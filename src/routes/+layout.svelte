@@ -1,10 +1,9 @@
-<div class="flex-container">
+
+<a href="/">
+	<div class="flex-container">
 	Svelte Pokedex
 </div>
+</a>
 <div class="flex-container">
 	<slot />
 </div>
-<!-- <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head> -->
