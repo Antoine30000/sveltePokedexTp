@@ -2,7 +2,7 @@ import type { PageLoad } from './$types';
 
 interface PokemonMetadata {
 	name: string;
-	image?: string;
+	image: string;
 }
 
 export const load: PageLoad = async ({ fetch }) => {
