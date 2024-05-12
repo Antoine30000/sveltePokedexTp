@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Antoine\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\Antoine\AppData\Local\npm-cache\_npx\583905104f230c6e\node_modules\.bin;C:\Users\Antoine\coursFrontend\sveltePokedex\sveltePokedexTp\node_modules\.bin;C:\Users\Antoine\coursFrontend\sveltePokedex\node_modules\.bin;C:\Users\Antoine\coursFrontend\node_modules\.bin;C:\Users\Antoine\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\Antoine\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Users\Antoine\scoop\apps\swift\current\Developer\Toolchains\unknown-Asserts-development.xctoolchain\usr\bin;C:\Users\Antoine\scoop\apps\swift\current\Swift\icu-69.1\usr\bin;C:\Users\Antoine\scoop\apps\swift\current\Swift\runtime-development\usr\bin;C:\Users\Antoine\scoop\shims;C:\Users\Antoine\AppData\Local\Microsoft\WindowsApps;C:\Users\Antoine\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Antoine\AppData\Roaming\npm;C:\Users\Antoine\.dotnet\tools;C:\xampp\php;C:\Users\Antoine\AppData\Local\ComposerSetup\bin;C:\Users\Antoine\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.1\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Antoine\coursFrontend\sveltePokedex\sveltePokedexTp\node_modules\@esbuild\win32-x64\esbuild.exe'
+
+npm manifest: 
+  {
+  	"name": "sveltepokedextp",
+  	"version": "0.0.1",
+  	"scripts": {
+  		"dev": "vite dev",
+  		"build": "vite build",
+  		"preview": "vite preview",
+  		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+  		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+  		"lint": "prettier --check . && eslint .",
+  		"format": "prettier --write ."
+  	},
+  	"devDependencies": {
+  		"@fontsource/fira-mono": "^4.5.10",
+  		"@neoconfetti/svelte": "^1.0.0",
+  		"@sveltejs/adapter-auto": "^3.0.0",
+  		"@sveltejs/kit": "^2.0.0",
+  		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+  		"@types/eslint": "^8.56.0",
+  		"@typescript-eslint/eslint-plugin": "^7.0.0",
+  		"@typescript-eslint/parser": "^7.0.0",
+  		"eslint": "^8.56.0",
+  		"eslint-config-prettier": "^9.1.0",
+  		"eslint-plugin-svelte": "^2.35.1",
+  		"prettier": "^3.1.1",
+  		"prettier-plugin-svelte": "^3.1.2",
+  		"svelte": "^4.2.7",
+  		"svelte-check": "^3.6.0",
+  		"tslib": "^2.4.1",
+  		"typescript": "^5.0.0",
+  		"vite": "^5.0.3"
+  	},
+  	"type": "module"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
