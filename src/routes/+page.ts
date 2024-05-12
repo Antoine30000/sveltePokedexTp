@@ -2,7 +2,7 @@ import type { PageLoad } from './$types';
 
 interface PokemonMetadata {
 	name: string;
-	image: string;
+	image?: string;
 }
 
 export const load: PageLoad = async ({ fetch }) => {
@@ -15,11 +15,11 @@ export const load: PageLoad = async ({ fetch }) => {
 		const name = pokemonsList.results[i].name;
 		const pokemonInfoReq = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
 		const pokemonInfo = pokemonInfoReq.json();
-		const image = pokemonInfo.sprites.front_default;
+		// const image = pokemonInfo.sprites.front_default;
 
 		const pokemon: PokemonMetadata = {
-			name: name,
-			image: image
+			name: name
+			// image: image
 		};
 
 		pokemons = [...pokemons, pokemon];
