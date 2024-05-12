@@ -9,7 +9,7 @@
 	{#each pokemons as pokemon}
 	<!-- <a href="./{pokemon.name}"> -->
 		<div class="flex">
-		  <!-- <img src="{pokemon.sprite}" alt="sprite of {pokemon.name}"> -->
+		  <img src="{pokemon.sprite}" alt="sprite of {pokemon.name}">
 		  <span>{pokemon.name}</span>
 		</div>
 	  <!-- </a> -->

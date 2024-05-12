@@ -14,15 +14,16 @@ export const load: PageLoad = async ({ fetch }) => {
 	for (let i = 0; i < pokemonsList.results.length; i++) {
 		const name = pokemonsList.results[i].name;
 		const pokemonInfoReq = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
-		const pokemonInfo = pokemonInfoReq.json();
-		// const image = pokemonInfo.sprites.front_default;
+		const pokemonInfo = await pokemonInfoReq.json();
+		const image: string = pokemonInfo.sprites.front_default;
 
 		const pokemon: PokemonMetadata = {
-			name: name
-			// image: image
+			name: name,
+			image: image
 		};
 
 		pokemons = [...pokemons, pokemon];
+		console.log(pokemonInfo);
 	}
 	return { pokemons };
 };
