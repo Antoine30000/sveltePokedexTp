@@ -23,7 +23,6 @@ export const load: PageLoad = async ({ fetch }) => {
 		};
 
 		pokemons = [...pokemons, pokemon];
-		console.log(pokemonInfo);
 	}
 	return { pokemons };
 };

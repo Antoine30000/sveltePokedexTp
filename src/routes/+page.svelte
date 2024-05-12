@@ -7,12 +7,12 @@
 
 <div class="flex-container">
 	{#each pokemons as pokemon}
-	<!-- <a href="./{pokemon.name}"> -->
+	<a href="./{pokemon.name}">
 		<div class="flex-container">
 		  <!-- svelte-ignore a11y-missing-attribute -->
 		  <img src="{pokemon.image}">
 		  <span>{pokemon.name}</span>
 		</div>
-	  <!-- </a> -->
+	  </a>
 	{/each}
 </div>
